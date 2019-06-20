@@ -1,0 +1,25 @@
+.header-switch-lang {
+  color: $template-backgroundColor;
+  //cursor: pointer;
+  // display: none;
+  font-size: 13px;
+
+  /*@media(min-width: 768px) {
+    @include flex-layout(center, flex, wrap, flex-end);
+    margin: 3px 12px 3px 12px;
+    width: 100%;
+  }
+  */
+  .switch-lang-content {
+    @include flex-layout(center, inline-flex, wrap, inherit);
+    span {
+
+      opacity: 0.5;
+      &.active {
+        opacity: inherit;
+      }
+      cursor: pointer;
+    }
+  }
+
+}

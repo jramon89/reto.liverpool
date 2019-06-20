@@ -1,0 +1,13 @@
+.products-content {
+
+  @include flex-layout(center, flex, column, center);
+  height: 82vh;
+  .products-list {
+    @include flex-layout(center, flex, wrap, space-between);
+    text-align: center;
+    width: 100%;
+    .product-item {
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.user-profile {
+    .user-caret {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    @include flex-layout(center, flex, inherit, inherit);
+    color: #222;
+    .user-profile-avatar {
+        background: url(http://allhdwallpapers.com/wp-content/uploads/2015/05/girls-B-9.jpg);
+        background-size: cover;
+        border: solid 1px silver;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.profile-items {
+    line-height: 2;
+    ul {
+        padding: 0;
+        li {
+            list-style-type: none;
+            a {
+                color: #444;
+                text-decoration: none;
+                &:hover {
+                    color: $template-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
